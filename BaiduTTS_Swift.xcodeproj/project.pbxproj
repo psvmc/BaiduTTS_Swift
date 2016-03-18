@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F59817E1C9BF26900A36836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59817D1C9BF26900A36836 /* AppDelegate.swift */; };
+		3F5981801C9BF26900A36836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59817F1C9BF26900A36836 /* ViewController.swift */; };
+		3F5981831C9BF26900A36836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5981811C9BF26900A36836 /* Main.storyboard */; };
+		3F5981851C9BF26900A36836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5981841C9BF26900A36836 /* Assets.xcassets */; };
+		3F5981881C9BF26900A36836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5981861C9BF26900A36836 /* LaunchScreen.storyboard */; };
+		3F59819C1C9BF56100A36836 /* Chinese_Speech_Female.dat in Resources */ = {isa = PBXBuildFile; fileRef = 3F5981921C9BF56100A36836 /* Chinese_Speech_Female.dat */; };
+		3F59819D1C9BF56100A36836 /* Chinese_Speech_Male.dat in Resources */ = {isa = PBXBuildFile; fileRef = 3F5981931C9BF56100A36836 /* Chinese_Speech_Male.dat */; };
+		3F59819E1C9BF56100A36836 /* Chinese_Text.dat in Resources */ = {isa = PBXBuildFile; fileRef = 3F5981941C9BF56100A36836 /* Chinese_Text.dat */; };
+		3F5981A21C9BF56100A36836 /* libetts_device_simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5981991C9BF56100A36836 /* libetts_device_simulator.a */; };
+		3F5981A31C9BF56100A36836 /* bdtts_license.dat in Resources */ = {isa = PBXBuildFile; fileRef = 3F59819B1C9BF56100A36836 /* bdtts_license.dat */; };
+		3F5981A51C9BF76A00A36836 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5981A41C9BF76A00A36836 /* libstdc++.6.0.9.tbd */; };
+		3F5981A71C9BF77300A36836 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5981A61C9BF77300A36836 /* libc++.tbd */; };
+		3F5981A91C9BF78000A36836 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5981A81C9BF78000A36836 /* libz.1.2.5.tbd */; };
+		3F5981AB1C9BF79600A36836 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5981AA1C9BF79600A36836 /* AudioToolbox.framework */; };
+		3F5981AD1C9BF79D00A36836 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5981AC1C9BF79D00A36836 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F59817A1C9BF26900A36836 /* BaiduTTS_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduTTS_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F59817D1C9BF26900A36836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F59817F1C9BF26900A36836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F5981821C9BF26900A36836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F5981841C9BF26900A36836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F5981871C9BF26900A36836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F5981891C9BF26900A36836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5981921C9BF56100A36836 /* Chinese_Speech_Female.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinese_Speech_Female.dat; sourceTree = "<group>"; };
+		3F5981931C9BF56100A36836 /* Chinese_Speech_Male.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinese_Speech_Male.dat; sourceTree = "<group>"; };
+		3F5981941C9BF56100A36836 /* Chinese_Text.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinese_Text.dat; sourceTree = "<group>"; };
+		3F5981991C9BF56100A36836 /* libetts_device_simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libetts_device_simulator.a; sourceTree = "<group>"; };
+		3F59819B1C9BF56100A36836 /* bdtts_license.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bdtts_license.dat; sourceTree = "<group>"; };
+		3F5981A41C9BF76A00A36836 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		3F5981A61C9BF77300A36836 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3F5981A81C9BF78000A36836 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		3F5981AA1C9BF79600A36836 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3F5981AC1C9BF79D00A36836 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F5981AE1C9BF7CC00A36836 /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		3F5981AF1C9BF8E300A36836 /* BDSSpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizer.h; sourceTree = "<group>"; };
+		3F5981B01C9BF96100A36836 /* BDSSpeechSynthesizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerDelegate.h; sourceTree = "<group>"; };
+		3F5981B11C9BF96100A36836 /* BDSSpeechSynthesizerErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerErrors.h; sourceTree = "<group>"; };
+		3F5981B21C9BF96100A36836 /* BDSSpeechSynthesizerParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerParams.h; sourceTree = "<group>"; };
+		3F5981B31C9BF96100A36836 /* BDSSynthesizerLogLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSynthesizerLogLevel.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F5981771C9BF26900A36836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5981AD1C9BF79D00A36836 /* UIKit.framework in Frameworks */,
+				3F5981AB1C9BF79600A36836 /* AudioToolbox.framework in Frameworks */,
+				3F5981A91C9BF78000A36836 /* libz.1.2.5.tbd in Frameworks */,
+				3F5981A71C9BF77300A36836 /* libc++.tbd in Frameworks */,
+				3F5981A51C9BF76A00A36836 /* libstdc++.6.0.9.tbd in Frameworks */,
+				3F5981A21C9BF56100A36836 /* libetts_device_simulator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F5981711C9BF26900A36836 = {
+			isa = PBXGroup;
+			children = (
+				3F5981AC1C9BF79D00A36836 /* UIKit.framework */,
+				3F5981AA1C9BF79600A36836 /* AudioToolbox.framework */,
+				3F5981A81C9BF78000A36836 /* libz.1.2.5.tbd */,
+				3F5981A61C9BF77300A36836 /* libc++.tbd */,
+				3F5981A41C9BF76A00A36836 /* libstdc++.6.0.9.tbd */,
+				3F59817C1C9BF26900A36836 /* BaiduTTS_Swift */,
+				3F59817B1C9BF26900A36836 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F59817B1C9BF26900A36836 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F59817A1C9BF26900A36836 /* BaiduTTS_Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F59817C1C9BF26900A36836 /* BaiduTTS_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3F5981AE1C9BF7CC00A36836 /* Bridge-Header.h */,
+				3F59818F1C9BF56100A36836 /* Lib */,
+				3F59817D1C9BF26900A36836 /* AppDelegate.swift */,
+				3F59817F1C9BF26900A36836 /* ViewController.swift */,
+				3F5981811C9BF26900A36836 /* Main.storyboard */,
+				3F5981841C9BF26900A36836 /* Assets.xcassets */,
+				3F5981861C9BF26900A36836 /* LaunchScreen.storyboard */,
+				3F5981891C9BF26900A36836 /* Info.plist */,
+			);
+			path = BaiduTTS_Swift;
+			sourceTree = "<group>";
+		};
+		3F59818F1C9BF56100A36836 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				3F5981901C9BF56100A36836 /* BaiduTTS */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		3F5981901C9BF56100A36836 /* BaiduTTS */ = {
+			isa = PBXGroup;
+			children = (
+				3F5981B01C9BF96100A36836 /* BDSSpeechSynthesizerDelegate.h */,
+				3F5981B11C9BF96100A36836 /* BDSSpeechSynthesizerErrors.h */,
+				3F5981B21C9BF96100A36836 /* BDSSpeechSynthesizerParams.h */,
+				3F5981B31C9BF96100A36836 /* BDSSynthesizerLogLevel.h */,
+				3F5981AF1C9BF8E300A36836 /* BDSSpeechSynthesizer.h */,
+				3F5981911C9BF56100A36836 /* data */,
+				3F5981981C9BF56100A36836 /* lib */,
+				3F59819A1C9BF56100A36836 /* license */,
+			);
+			path = BaiduTTS;
+			sourceTree = "<group>";
+		};
+		3F5981911C9BF56100A36836 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				3F5981921C9BF56100A36836 /* Chinese_Speech_Female.dat */,
+				3F5981931C9BF56100A36836 /* Chinese_Speech_Male.dat */,
+				3F5981941C9BF56100A36836 /* Chinese_Text.dat */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		3F5981981C9BF56100A36836 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3F5981991C9BF56100A36836 /* libetts_device_simulator.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		3F59819A1C9BF56100A36836 /* license */ = {
+			isa = PBXGroup;
+			children = (
+				3F59819B1C9BF56100A36836 /* bdtts_license.dat */,
+			);
+			path = license;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F5981791C9BF26900A36836 /* BaiduTTS_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F59818C1C9BF26900A36836 /* Build configuration list for PBXNativeTarget "BaiduTTS_Swift" */;
+			buildPhases = (
+				3F5981761C9BF26900A36836 /* Sources */,
+				3F5981771C9BF26900A36836 /* Frameworks */,
+				3F5981781C9BF26900A36836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaiduTTS_Swift;
+			productName = BaiduTTS_Swift;
+			productReference = 3F59817A1C9BF26900A36836 /* BaiduTTS_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F5981721C9BF26900A36836 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "张剑";
+				TargetAttributes = {
+					3F5981791C9BF26900A36836 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3F5981751C9BF26900A36836 /* Build configuration list for PBXProject "BaiduTTS_Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F5981711C9BF26900A36836;
+			productRefGroup = 3F59817B1C9BF26900A36836 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F5981791C9BF26900A36836 /* BaiduTTS_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F5981781C9BF26900A36836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F59819D1C9BF56100A36836 /* Chinese_Speech_Male.dat in Resources */,
+				3F5981881C9BF26900A36836 /* LaunchScreen.storyboard in Resources */,
+				3F5981851C9BF26900A36836 /* Assets.xcassets in Resources */,
+				3F5981831C9BF26900A36836 /* Main.storyboard in Resources */,
+				3F59819E1C9BF56100A36836 /* Chinese_Text.dat in Resources */,
+				3F59819C1C9BF56100A36836 /* Chinese_Speech_Female.dat in Resources */,
+				3F5981A31C9BF56100A36836 /* bdtts_license.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F5981761C9BF26900A36836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5981801C9BF26900A36836 /* ViewController.swift in Sources */,
+				3F59817E1C9BF26900A36836 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F5981811C9BF26900A36836 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F5981821C9BF26900A36836 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F5981861C9BF26900A36836 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F5981871C9BF26900A36836 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F59818A1C9BF26900A36836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F59818B1C9BF26900A36836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F59818D1C9BF26900A36836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BaiduTTS_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaiduTTS_Swift/Lib/BaiduTTS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.psvmc.BaiduTTS-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)/Bridge-Header.h";
+			};
+			name = Debug;
+		};
+		3F59818E1C9BF26900A36836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BaiduTTS_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaiduTTS_Swift/Lib/BaiduTTS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.psvmc.BaiduTTS-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)/Bridge-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F5981751C9BF26900A36836 /* Build configuration list for PBXProject "BaiduTTS_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F59818A1C9BF26900A36836 /* Debug */,
+				3F59818B1C9BF26900A36836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F59818C1C9BF26900A36836 /* Build configuration list for PBXNativeTarget "BaiduTTS_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F59818D1C9BF26900A36836 /* Debug */,
+				3F59818E1C9BF26900A36836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F5981721C9BF26900A36836 /* Project object */;
+}
