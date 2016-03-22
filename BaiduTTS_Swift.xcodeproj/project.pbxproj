@@ -22,6 +22,7 @@
 		3F5981A91C9BF78000A36836 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5981A81C9BF78000A36836 /* libz.1.2.5.tbd */; };
 		3F5981AB1C9BF79600A36836 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5981AA1C9BF79600A36836 /* AudioToolbox.framework */; };
 		3F5981AD1C9BF79D00A36836 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5981AC1C9BF79D00A36836 /* UIKit.framework */; };
+		3FA0AC011CA0F84F00728071 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA0AC001CA0F84F00728071 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		3F5981B11C9BF96100A36836 /* BDSSpeechSynthesizerErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerErrors.h; sourceTree = "<group>"; };
 		3F5981B21C9BF96100A36836 /* BDSSpeechSynthesizerParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerParams.h; sourceTree = "<group>"; };
 		3F5981B31C9BF96100A36836 /* BDSSynthesizerLogLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSynthesizerLogLevel.h; sourceTree = "<group>"; };
+		3FA0ABFE1CA0E4BA00728071 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3FA0AC001CA0F84F00728071 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA0AC011CA0F84F00728071 /* AVFoundation.framework in Frameworks */,
 				3F5981AD1C9BF79D00A36836 /* UIKit.framework in Frameworks */,
 				3F5981AB1C9BF79600A36836 /* AudioToolbox.framework in Frameworks */,
 				3F5981A91C9BF78000A36836 /* libz.1.2.5.tbd in Frameworks */,
@@ -70,6 +74,8 @@
 		3F5981711C9BF26900A36836 = {
 			isa = PBXGroup;
 			children = (
+				3FA0AC001CA0F84F00728071 /* AVFoundation.framework */,
+				3FA0ABFE1CA0E4BA00728071 /* libsqlite3.0.tbd */,
 				3F5981AC1C9BF79D00A36836 /* UIKit.framework */,
 				3F5981AA1C9BF79600A36836 /* AudioToolbox.framework */,
 				3F5981A81C9BF78000A36836 /* libz.1.2.5.tbd */,
@@ -184,6 +190,7 @@
 				TargetAttributes = {
 					3F5981791C9BF26900A36836 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 6U6NNJD6PX;
 					};
 				};
 			};
@@ -339,12 +346,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BaiduTTS_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaiduTTS_Swift/Lib/BaiduTTS/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.psvmc.BaiduTTS-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,12 +368,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BaiduTTS_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaiduTTS_Swift/Lib/BaiduTTS/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.psvmc.BaiduTTS-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +405,7 @@
 				3F59818E1C9BF26900A36836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

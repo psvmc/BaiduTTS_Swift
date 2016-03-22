@@ -1,25 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BaiduTTS_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9a-kt-Ia6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fqx-3w-yTz">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="有一个面包走在街上，它觉得自己很饿，就把自己吃了。 " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Qa-6d-vX1">
+                                                <rect key="frame" x="20" y="20" width="280" height="180"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="8Qa-6d-vX1" firstAttribute="leading" secondItem="Fqx-3w-yTz" secondAttribute="leading" constant="20" id="5wn-4X-79q"/>
+                                            <constraint firstAttribute="trailing" secondItem="8Qa-6d-vX1" secondAttribute="trailing" constant="20" id="Ft6-Ug-mph"/>
+                                            <constraint firstAttribute="bottom" secondItem="8Qa-6d-vX1" secondAttribute="bottom" id="Fys-j2-6Wo"/>
+                                            <constraint firstAttribute="height" constant="200" id="IlU-LM-RXm"/>
+                                            <constraint firstItem="8Qa-6d-vX1" firstAttribute="top" secondItem="Fqx-3w-yTz" secondAttribute="top" constant="20" id="vBo-qa-Oai"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOv-A7-Apo">
+                                        <rect key="frame" x="60" y="428" width="200" height="50"/>
+                                        <color key="backgroundColor" red="0.19250629150000001" green="0.58718936470000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="ONs-1o-a3d"/>
+                                            <constraint firstAttribute="height" constant="50" id="a9i-QG-ad0"/>
+                                        </constraints>
+                                        <state key="normal" title="百度语音播放">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playMsgClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAc-Ww-Zqm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDO-gV-hjD">
+                                        <rect key="frame" x="60" y="498" width="200" height="50"/>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.45882352939999999" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5en-hz-1ii"/>
+                                            <constraint firstAttribute="width" constant="200" id="J3i-6b-uWH"/>
+                                        </constraints>
+                                        <state key="normal" title="系统播放">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playMsgSysClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hso-nE-1zB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="IOv-A7-Apo" firstAttribute="centerX" secondItem="m9a-kt-Ia6" secondAttribute="centerX" id="B3C-fh-2PG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fqx-3w-yTz" secondAttribute="trailing" id="F40-Nt-cK4"/>
+                                    <constraint firstAttribute="bottom" secondItem="CDO-gV-hjD" secondAttribute="bottom" constant="20" id="GQh-qf-Wwv"/>
+                                    <constraint firstItem="CDO-gV-hjD" firstAttribute="centerX" secondItem="m9a-kt-Ia6" secondAttribute="centerX" id="O4O-WP-vzy"/>
+                                    <constraint firstItem="CDO-gV-hjD" firstAttribute="top" secondItem="IOv-A7-Apo" secondAttribute="bottom" constant="20" id="Odh-pI-pyX"/>
+                                    <constraint firstItem="Fqx-3w-yTz" firstAttribute="leading" secondItem="m9a-kt-Ia6" secondAttribute="leading" id="X3n-Zk-T1Y"/>
+                                    <constraint firstItem="Fqx-3w-yTz" firstAttribute="top" secondItem="m9a-kt-Ia6" secondAttribute="top" id="mEl-Fp-ocL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m9a-kt-Ia6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="GEH-Mb-gPo"/>
+                            <constraint firstItem="m9a-kt-Ia6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dkt-ak-NWk"/>
+                            <constraint firstItem="m9a-kt-Ia6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="fSl-pw-KRG"/>
+                            <constraint firstItem="m9a-kt-Ia6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kKF-6n-ojU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputTextView" destination="8Qa-6d-vX1" id="W7H-bR-YKq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="222.93333333333334" y="205.90000000000001"/>
         </scene>
     </scenes>
 </document>
